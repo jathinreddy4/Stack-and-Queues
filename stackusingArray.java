@@ -49,13 +49,15 @@ public class stackusingArray
         Scanner obj = new Scanner(System.in);
         stack st = new stack();
             
-        
-        System.out.println("enter 1 to push");
-        System.out.println("enter 2 pop");
-        System.out.println("enter 3 to display");
-        int choice = obj.nextInt();
-        switch(choice)
+        int l;
+        do
         {
+            System.out.println("enter 1 to push");
+            System.out.println("enter 2 pop");
+            System.out.println("enter 3 to display");
+            int choice = obj.nextInt();
+            switch(choice)
+            {
                 case 1 : st.push();
                 break;
 
@@ -64,6 +66,14 @@ public class stackusingArray
 
                 case 3 : st.display();
                 break;
+            }
+            System.out.println("enter 0 to return to main menu");
+            l = obj.nextInt();
+
+        }
+        while(l == 0);
+        {
+            System.out.println("Exited");
         }
 
         
