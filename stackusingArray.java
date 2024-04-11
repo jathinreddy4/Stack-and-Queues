@@ -38,7 +38,7 @@ class stack
         System.out.println("Stack elements : ");
         for(int j = top; j>=0; j--)
         {
-            System.out.println(arr[j]);
+            System.out.print(arr[j] + " ");
         }
     }
 }
